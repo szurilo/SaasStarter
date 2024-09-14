@@ -338,3 +338,19 @@ Homescreen Icons are from [Solar Broken Line Icons](https://www.svgrepo.com/coll
 # Sponsor
 
 We hope you enjoy SaaS Starter! If you build mobile apps, please check out its sponsor/creator, [Critical Moments](https://criticalmoments.io). We can help improve your mobile app conversions, improve your app rating, and mitigate major bugs and outages.
+
+
+## Install WSL and Supabase(local)
+
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+scoop bucket add supabase https://github.com/supabase/scoop-bucket.git
+scoop install supabase
+wsl --install
+Install Docker Desktop: https://docs.docker.com/desktop/install/windows-install/
+Expose daemon on… Add the *.docker.internal…: https://supabase.com/docs/guides/cli/getting-started?queryGroups=platform&platform=windows
+Pull Supabase directory from GIT by initiating pull command.
+supabase start
+```
+You can use the `supabase stop` command at any time to stop all services (without resetting your local database). Use `supabase stop --no-backup` to stop all services and reset your local database.
