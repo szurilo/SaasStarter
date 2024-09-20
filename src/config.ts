@@ -1,5 +1,5 @@
-export const WebsiteName: string = "SaaS Starter"
+export const WebsiteName: string = "Email away"
 export const WebsiteBaseUrl: string = "https://saasstarter.work"
 export const WebsiteDescription: string =
-  "Open source, fast, and free to host SaaS template. Built with SvelteKit, Supabase, Stripe, Tailwind, DaisyUI, and Postgres"
+  "Build email templates with html and via drag&drop, send them to an email service provider"
 export const CreateProfileStep: boolean = true
